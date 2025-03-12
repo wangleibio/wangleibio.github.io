@@ -30,6 +30,16 @@
             margin: 0;
             font-size: 36px;
         }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
         .content {
             padding: 20px;
             background: #fff;
@@ -42,6 +52,23 @@
         }
         .content p {
             font-size: 18px;
+        }
+        .profile-img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .publications {
+            margin-top: 20px;
+        }
+        .publications ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .publications li {
+            margin-bottom: 10px;
         }
         footer {
             background: #333;
@@ -59,9 +86,17 @@
         </div>
     </header>
 
+    <nav>
+        <a href="#about">About</a>
+        <a href="#calligraphy">Calligraphy</a>
+        <a href="#publications">Publications</a>
+        <a href="#thoughts">Thoughts</a>
+    </nav>
+
     <div class="container">
-        <div class="content">
-            <h2>Lei Wang PhD</h2>
+        <div class="content" id="about">
+            <img src="your-photo.jpg" alt="Your Photo" class="profile-img">
+            <h2>Lei（磊） Wang（王） PhD</h2>
             <p>AI <br> deep learning <br>  gene regulation <be> immuno-oncology <br>Email: wanglei@gmail.com</p>
 
             <h2>My Journey</h2>
@@ -72,6 +107,32 @@
 
             <h2>Beyond Science</h2>
             <p>Outside the lab, I am a passionate music, pingpang, badminton, pickball and swiming.</p>
+        </div>
+
+        <div class="content" id="publications">
+            <h2>Publications</h2>
+            <ul>
+                <li><strong>Title of Publication 1</strong><br>Journal Name, Year<br><a href="#">Link to Publication</a></li>
+                <li><strong>Title of Publication 2</strong><br>Journal Name, Year<br><a href="#">Link to Publication</a></li>
+                <li><strong>Title of Publication 3</strong><br>Journal Name, Year<br><a href="#">Link to Publication</a></li>
+            </ul>
+        </div>
+
+        <div class="content" id="calligraphy">
+            <h2>Calligraphy</h2>
+            <p>Here are some of my calligraphy works:</p>
+            <img src="calligraphy1.jpg" alt="Calligraphy Work 1" style="width:100%; max-width:400px;">
+            <img src="calligraphy2.jpg" alt="Calligraphy Work 2" style="width:100%; max-width:400px;">
+        </div>
+
+        <div class="content" id="thoughts">
+            <h2>Thoughts</h2>
+            <p>Here are some of my thoughts on various topics:</p>
+            <ul>
+                <li><a href="#">Thought 1</a></li>
+                <li><a href="#">Thought 2</a></li>
+                <li><a href="#">Thought 3</a></li>
+            </ul>
         </div>
     </div>
 
